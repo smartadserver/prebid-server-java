@@ -1,0 +1,24 @@
+adapters:
+  equativ:
+    ortb-version: "2.6"
+    endpoint: https://ssb-global.smartadserver.com
+    geoscope:
+      - global  
+    ortb:
+      multiformat-supported: true
+    meta-info:
+      maintainer-email: supply-partner-integration@equativ.com
+      app-media-types:
+        - banner
+        - video
+        - native
+      site-media-types:
+        - banner
+        - video
+        - native
+      supported-vendors:
+      vendor-id: 45
+    userSync:
+      redirect:
+        url: "https://ssbsync-global.smartadserver.com/api/sync?callerId=5&gdpr={{gdpr}}&gdpr_consent={{gdpr_consent}}&us_privacy={{us_privacy}}&redirectUri={{redirect_url}}"
+        uid-macro: "[ssb_sync_pid]"
